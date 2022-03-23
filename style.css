@@ -1,0 +1,298 @@
+/* ---------------------------------------------- */
+/* GENERAL STYLING */
+/* ---------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+/* ---------------------------------------------- */
+/* LARGER ELEMENTS */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* LANDING PAGE */
+/* ---------------------------------------------- */
+
+.heroContainer {
+  display: grid;
+  /* max-width: 100vw; */
+  /* padding: 3.2rem; */
+  margin: 0 auto;
+  grid-template-columns: 2fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10rem);
+  z-index: 3;
+}
+
+.LHS {
+  /* background-color: #e35400; */
+  background: linear-gradient(90deg, #e35400, #e97633);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #2d1100;
+}
+
+.LHS p {
+  z-index: 3;
+}
+
+.LHS p:nth-child(1) {
+  font-size: 15rem;
+  margin-bottom: 10rem;
+  /* letter-spacing: -0.5rem; */
+}
+
+.LHS p:nth-child(2) {
+  font-size: 8rem;
+  letter-spacing: 0.5rem;
+}
+
+.LHS p:nth-child(3) {
+  font-size: 15rem;
+  letter-spacing: -0.5rem;
+}
+
+.RHS {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(90deg, #e97633, #ee9866);
+  padding: 3.2rem;
+}
+
+/* ---------------------------------------------- */
+/* HERO NAV STYLING */
+/* ---------------------------------------------- */
+
+.link {
+  text-decoration: none;
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e35400;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2d1100;
+}
+
+/* ---------------------------------------------- */
+/* ANIMATION STYLING */
+/* ---------------------------------------------- */
+
+.projects {
+  transition: all 0.5s;
+  /* box-shadow: 0rem 0rem 15rem 0.1rem rgba(0, 0, 0, 0.2); */
+}
+
+.projects:link,
+.projects:visited {
+  background-color: #e35400;
+  color: #000;
+}
+
+.projects:hover {
+  background-color: blue;
+  color: #fff;
+  transform: translateY(-0.3rem);
+  box-shadow: 0rem 0rem 50rem blue;
+}
+/* #background-trigger:hover > #background-change {
+  background: blue;
+} */
+
+.projectsMouseOver {
+  background: linear-gradient(90deg, #0e0e9c, #add8e6);
+  color: white;
+}
+.resume {
+  transition: all 0.5s;
+}
+
+.resume:link,
+.resume:visited {
+  background-color: #e35400;
+  color: black;
+}
+
+.resume:hover,
+.resume:active {
+  background-color: green;
+  color: white;
+  transform: translateY(-0.3rem);
+  box-shadow: 0rem 0rem 30rem green;
+}
+
+.about {
+  transition: all 0.5s;
+}
+
+.about:link,
+.about:visited {
+  background-color: #e35400;
+  color: black;
+}
+
+.about:hover,
+.about:active {
+  background-color: green;
+  color: white;
+  transform: translateY(-0.3rem);
+  box-shadow: 0rem 0rem 30rem green;
+}
+
+/* ---------------------------------------------- */
+/* ABOUT SECTION */
+/* ---------------------------------------------- */
+
+.aboutSection {
+  /* display: grid; */
+  /* max-width: 100vw; */
+  /* padding: 3.2rem; */
+  margin: 0 auto;
+  grid-template-columns: 2fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10rem);
+  z-index: 3;
+  background: green;
+}
+
+.standardNav {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  align-items: center;
+  background: lightgreen;
+}
+
+.standardLink:link,
+.standardLink:visited {
+  text-decoration: none;
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: green;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: darkgreen;
+}
+
+/* ---------------------------------------------- */
+/* PROJECTS SECTION */
+/* ---------------------------------------------- */
+.projectsSection {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: blue;
+}
+
+.project1Container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  width: 120rem;
+  height: 30rem;
+  /* padding: 2rem; */
+  border: 3px solid white;
+  border-radius: 30px;
+  margin-bottom: 10rem;
+}
+
+/* ---------------------------------------------- */
+/* PROJECTS IMAGE SECTION */
+/* ---------------------------------------------- */
+
+.linkContainer {
+  /* position: absolute; */
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  color: lightblue;
+  margin-top: 1.5rem;
+}
+
+.project1LinkToGithub {
+  margin-right: 10rem;
+  margin-left: 3rem;
+}
+
+/* .projectLink:after {
+  content: " \2192";
+  color: lightblue;
+} */
+
+.projectLink:link,
+.projectLink:visited {
+  color: lightblue;
+  text-decoration: none;
+  transition: all ease-in-out 0.5s;
+  border-bottom: 1px solid transparent;
+}
+
+.projectLink:hover,
+.projectLink:active {
+  color: darkorange;
+  border-color: darkorange; /* content: "\2192"; */
+}
+
+.project1Image {
+  /* border-right: 1px solid white; */
+  width: 30rem;
+  height: 29.4rem;
+  object-fit: cover;
+  border-radius: 30px;
+  /* border-right: 1px solid white; */
+}
+
+/* ---------------------------------------------- */
+/* PROJECTS IMAGE ANIMATION SECTION */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* PROJECTS DESCRIPTION SECTION */
+/* ---------------------------------------------- */
+
+.project1Description {
+  padding: 2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.project1BodyText {
+  color: lightblue;
+  font-size: 2rem;
+  grid-row: 1;
+  grid-column: 2;
+  grid-column: 2;
+}
