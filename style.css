@@ -82,12 +82,14 @@ body {
 .standardNav {
   display: flex;
   /* flex-direction: row; */
-  justify-content: left;
+  justify-content: right;
   /* align-items: center; */
-  background: red;
+  background: gray;
+  background: linear-gradient(90deg, #e97633, #e35400);
+  gap: 10rem;
 }
 
-.standardLink:link,
+/* .standardLink:link,
 .standardLink:visited {
   text-decoration: none;
   display: flex;
@@ -100,7 +102,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: darkgreen;
-}
+} */
 
 .navButton {
   text-decoration: none;
@@ -110,10 +112,16 @@ body {
   align-items: center;
   justify-content: center;
   /* border-radius: 50%; */
-  background-color: #e35400;
+  background-color: gray;
   font-size: 3rem;
   font-weight: 700;
-  color: #2d1100;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resumeButton {
+  margin-right: 2rem;
 }
 
 /* ---------------------------------------------- */
@@ -196,29 +204,6 @@ body {
   backdrop-filter: blur(10rem);
   z-index: 3;
   background: green;
-}
-
-.standardNav {
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: space-around;
-  align-items: center;
-  background: lightgreen;
-}
-
-.standardLink:link,
-.standardLink:visited {
-  text-decoration: none;
-  display: flex;
-  width: 10rem;
-  height: 10rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: green;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: darkgreen;
 }
 
 /* ---------------------------------------------- */
