@@ -82,7 +82,7 @@ body {
 .standardNav {
   display: flex;
   /* flex-direction: row; */
-  /* justify-content: space-around; */
+  justify-content: left;
   /* align-items: center; */
   background: red;
 }
