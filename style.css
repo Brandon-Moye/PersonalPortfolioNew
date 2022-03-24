@@ -46,10 +46,6 @@ body {
   color: #2d1100;
 }
 
-.LHS p {
-  /* z-index: 3; */
-}
-
 .LHS p:nth-child(1) {
   font-size: 15rem;
   margin-bottom: 10rem;
@@ -85,6 +81,9 @@ body {
   bottom: 0;
   z-index: 3;
   height: 10rem;
+  padding-top: 0;
+  width: 100%;
+  padding-bottom: 0;
   /* width: 100%; */
 }
 
@@ -92,6 +91,7 @@ body {
   display: flex;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
 .otherButtonContainer {
