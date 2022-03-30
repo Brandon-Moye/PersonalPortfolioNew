@@ -124,7 +124,6 @@ body {
   justify-content: center;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0rem 0rem 10rem rgb(219, 219, 219);
   font-size: 3rem;
   font-weight: 700;
   color: black;
@@ -146,34 +145,138 @@ body {
 
 .landingScreenButton:hover,
 .landingScreenButton:active {
-  background-color: orange;
-  color: rgb(134, 74, 0);
+  background-color: #000;
+  color: #e35400;
   transform: translateY(-0.2rem);
-  box-shadow: 0rem 0rem 50rem orange;
+  box-shadow: 0rem 0rem 5rem #000;
 }
 
 .contactButton:hover,
 .contactButton:active {
   background-color: green;
+  background-color: #2d4739;
+  background-color: #2d6228;
   color: white;
   transform: translateY(-0.2rem);
-  box-shadow: 0rem 0rem 50rem green;
+  box-shadow: 0rem 0rem 5rem #2d4739;
+  box-shadow: 0rem 0rem 5rem #2d6228;
 }
 
 .projectsButton:hover,
 .projectsButton:active {
-  background-color: blue;
+  background-color: #2260b2;
   color: #fff;
   transform: translateY(-0.2rem);
-  box-shadow: 0rem 0rem 50rem blue;
+  box-shadow: 0rem 0rem 5rem #2260b2;
 }
 
 .resumeButton:hover,
 .resumeButton:active {
   background-color: purple;
+  background-color: #26173d;
   color: white;
   transform: translateY(-0.2rem);
-  box-shadow: 0rem 0rem 50rem purple;
+  box-shadow: 0rem 0rem 5rem purple;
+  box-shadow: 0rem 0rem 5rem #26173d;
+}
+
+/* ---------------------------------------------- */
+/* PROJECTS SECTION */
+/* ---------------------------------------------- */
+.projectsSection {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  /* height: 100vh; */
+  background: blue;
+  padding: 10rem 10rem;
+}
+
+.project1Container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  width: 120rem;
+  height: 30rem;
+  /* padding: 2rem; */
+  border: 3px solid white;
+  border-radius: 30px;
+  margin-bottom: 10rem;
+}
+
+/* ---------------------------------------------- */
+/* PROJECTS IMAGE SECTION */
+/* ---------------------------------------------- */
+
+.linkContainer {
+  /* position: absolute; */
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  color: lightblue;
+  margin-top: 1.5rem;
+}
+
+.project1LinkToGithub {
+  margin-right: 10rem;
+  margin-left: 3rem;
+}
+
+/* .projectLink:after {
+  content: " \2192";
+  color: lightblue;
+} */
+
+.projectLink:link,
+.projectLink:visited {
+  color: lightblue;
+  text-decoration: none;
+  transition: all ease-in-out 0.4s;
+  border-bottom: 1px solid transparent;
+}
+
+.projectLink:hover,
+.projectLink:active {
+  color: darkorange;
+  border-color: darkorange; /* content: "\2192"; */
+  transform: translateY(-0.2rem);
+}
+
+.project1Image {
+  width: 30rem;
+  height: 29.4rem;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+/* ---------------------------------------------- */
+/* PROJECTS IMAGE ANIMATION SECTION */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* PROJECTS DESCRIPTION SECTION */
+/* ---------------------------------------------- */
+
+.project1Description {
+  padding: 2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.project1BodyText {
+  color: lightblue;
+  font-size: 2rem;
+  grid-row: 1;
+  grid-column: 2;
+  grid-column: 2;
 }
 
 /* ---------------------------------------------- */
@@ -238,103 +341,4 @@ body {
   backdrop-filter: blur(10rem);
   /* z-index: 3; */
   background: green;
-}
-
-/* ---------------------------------------------- */
-/* PROJECTS SECTION */
-/* ---------------------------------------------- */
-.projectsSection {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  background: blue;
-}
-
-.project1Container {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr;
-  width: 120rem;
-  height: 30rem;
-  /* padding: 2rem; */
-  border: 3px solid white;
-  border-radius: 30px;
-  margin-bottom: 10rem;
-}
-
-/* ---------------------------------------------- */
-/* PROJECTS IMAGE SECTION */
-/* ---------------------------------------------- */
-
-.linkContainer {
-  /* position: absolute; */
-  bottom: 1rem;
-  left: 1rem;
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  color: lightblue;
-  margin-top: 1.5rem;
-}
-
-.project1LinkToGithub {
-  margin-right: 10rem;
-  margin-left: 3rem;
-}
-
-/* .projectLink:after {
-  content: " \2192";
-  color: lightblue;
-} */
-
-.projectLink:link,
-.projectLink:visited {
-  color: lightblue;
-  text-decoration: none;
-  transition: all ease-in-out 0.5s;
-  border-bottom: 1px solid transparent;
-}
-
-.projectLink:hover,
-.projectLink:active {
-  color: darkorange;
-  border-color: darkorange; /* content: "\2192"; */
-}
-
-.project1Image {
-  /* border-right: 1px solid white; */
-  width: 30rem;
-  height: 29.4rem;
-  object-fit: cover;
-  border-radius: 30px;
-  /* border-right: 1px solid white; */
-}
-
-/* ---------------------------------------------- */
-/* PROJECTS IMAGE ANIMATION SECTION */
-/* ---------------------------------------------- */
-
-/* ---------------------------------------------- */
-/* PROJECTS DESCRIPTION SECTION */
-/* ---------------------------------------------- */
-
-.project1Description {
-  padding: 2rem;
-}
-
-h3 {
-  font-size: 2.5rem;
-  color: white;
-  font-weight: bold;
-}
-
-.project1BodyText {
-  color: lightblue;
-  font-size: 2rem;
-  grid-row: 1;
-  grid-column: 2;
-  grid-column: 2;
 }
