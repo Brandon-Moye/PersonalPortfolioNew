@@ -14,19 +14,26 @@
     />
   </head>
   <body>
-    <header class="header headerOrangeBuffer">
+    <header id="header" class="header headerOrangeBuffer">
       <nav class="allNavContainer">
-        <div class="landingScreenButtonContainer">
-          <a class="navButton landingScreenButton" href="">Brandon Moye</a>
+        <div
+          id="landingScreenButtonContainer"
+          class="landingScreenButtonContainer"
+        >
+          <a class="navButton landingScreenButton" href="#aboutSection"
+            >Brandon Moye</a
+          >
         </div>
         <div class="otherButtonContainer">
-          <a class="navButton projectsButton" href="#">Projects</a>
-          <a class="navButton resumeButton" href="#">Resume</a>
-          <a class="navButton contactButton" href="#">Contact</a>
+          <a class="navButton projectsButton" href="#projectsSection"
+            >Projects</a
+          >
+          <a class="navButton resumeButton" href="#resumeSection">Resume</a>
+          <a class="navButton contactButton" href="#contactSection">Contact</a>
         </div>
       </nav>
     </header>
-    <div class="heroContainer">
+    <div id="aboutSection" class="heroContainer">
       <section id="LHS" class="LHS">
         <p class="hello">Hello,</p>
         <p class="intro">my name is</p>
@@ -51,20 +58,21 @@
     <!--                -->
     <!--PROJECTS SECTION-->
     <!--                -->
-    <section class="projectsSection">
-      <div class="project1Container">
+    <section id="projectsSection" class="projectsSection">
+      <h3 class="projectsSectionTitle">Projects</h3>
+      <div class="projectContainer projectContainer--hangman">
         <div id="imageContainer" class="imageContainer">
           <img
-            id="project1Image"
-            class="project1Image"
+            id="projectImage"
+            class="projectImage"
             src="img/DF673D1D-CD37-46AF-B2BF-062DC27D973A_1_201_a.jpeg"
             alt=""
           />
         </div>
-        <div class="project1Description">
+        <div class="projectDescription">
           <h3>Hangman</h3>
           <br />
-          <span class="project1BodyText">
+          <span class="projectBodyText">
             This is a hangman game that allows players to input a letter via
             keyboard. All of the words are a favorite thing of mine to help the
             player get to know me!
@@ -77,29 +85,29 @@
             repeat <br />
             - Every potential word has a category to help the player
             <div class="linkContainer">
-              <a class="projectLink project1LinkToGithub" href="#"
+              <a class="projectLink projectLinkToGithub" href="#"
                 >See in Github &rarr;</a
               >
-              <a class="projectLink project1LinkToLive" href="#"
+              <a class="projectLink projectLinkToLive" href="#"
                 >See Live &rarr;</a
               >
             </div>
           </span>
         </div>
       </div>
-      <div class="project1Container">
+      <div class="projectContainer">
         <div id="imageContainer" class="imageContainer">
           <img
-            id="project1Image"
-            class="project1Image"
+            id="projectImage"
+            class="projectImage"
             src="img/DF673D1D-CD37-46AF-B2BF-062DC27D973A_1_201_a.jpeg"
             alt=""
           />
         </div>
-        <div class="project1Description">
+        <div class="projectDescription">
           <h3>Tic-Tac-Toe</h3>
           <br />
-          <span class="project1BodyText">
+          <span class="projectBodyText">
             This is a two player tic-tac-toe game
             <br />
             - Players will click on a cell to put down their game piece <br />
@@ -111,10 +119,10 @@
             players to play again <br />
             - If there is a tie the game will notify the players that no one won
             <div class="linkContainer">
-              <a class="projectLink project1LinkToGithub" href="#"
+              <a class="projectLink projectLinkToGithub" href="#"
                 >See in Github &rarr;</a
               >
-              <a class="projectLink project1LinkToLive" href="#"
+              <a class="projectLink projectLinkToLive" href="#"
                 >See Live &rarr;</a
               >
             </div>
@@ -122,19 +130,19 @@
         </div>
       </div>
 
-      <div class="project1Container">
+      <div class="projectContainer">
         <div id="imageContainer" class="imageContainer">
           <img
-            id="project1Image"
-            class="project1Image"
+            id="projectImage"
+            class="projectImage"
             src="img/DF673D1D-CD37-46AF-B2BF-062DC27D973A_1_201_a.jpeg"
             alt=""
           />
         </div>
-        <div class="project1Description">
+        <div class="projectDescription">
           <h3>Case Study: Omnifood</h3>
           <br />
-          <span class="project1BodyText">
+          <span class="projectBodyText">
             A website focused on design and user experience
             <br />
             - This was a project for a Udemy course I completed<br />
@@ -143,12 +151,48 @@
             - The code checks for all potential win patterns to determine a win
             <br />
             - The page contains multiple types of design layouts <br />
-            - If there is a tie the game will notify the players that no one won
+            - There is a working contact form where I can view messages people
+            have sent
             <div class="linkContainer">
-              <a class="projectLink project1LinkToGithub" href="#"
+              <a class="projectLink projectLinkToGithub" href="#"
                 >See in Github &rarr;</a
               >
-              <a class="projectLink project1LinkToLive" href="#"
+              <a class="projectLink projectLinkToLive" href="#"
+                >See Live &rarr;</a
+              >
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="projectContainer proejctContainer--carousel">
+        <div id="imageContainer" class="imageContainer">
+          <img
+            id="projectImage"
+            class="projectImage"
+            src="img/DF673D1D-CD37-46AF-B2BF-062DC27D973A_1_201_a.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="projectDescription">
+          <h3>Carousel</h3>
+          <br />
+          <span class="projectBodyText">
+            A shell for an e-commorce like product photo display
+            <br />
+            - This heavily uses JavaScript and CSS to create hover effects<br />
+            - When a user hovers over the smaller photo it appears on the main
+            photo section
+            <br />
+            - If a user hovers over a different photo it will change the main
+            photo
+            <br />
+            - JavaScript allowed me to have the last hovered over photo remain
+            in the main section, even if a user hovered over blank space <br />
+            <div class="linkContainer">
+              <a class="projectLink projectLinkToGithub" href="#"
+                >See in Github &rarr;</a
+              >
+              <a class="projectLink projectLinkToLive" href="#"
                 >See Live &rarr;</a
               >
             </div>
@@ -157,11 +201,19 @@
       </div>
     </section>
 
+    <section id="resumeSection" class="resumeSection">
+      <h3 class="resumeSectionTitle">Resume</h3>
+      <div class="resumeLinkContainer">
+        <a class="resumeLinkPDF" href="#">PDF</a>
+      </div>
+      <img class="resumeSVG" src="img/resume.svg" alt="#" />
+    </section>
+
     <!--             -->
-    <!--ABOUT SECTION-->
+    <!--CONTACT SECTION-->
     <!--             -->
 
-    <section class="aboutSection">
+    <section id="contactSection" class="contactSection">
       <p>
         I am a self taught developer with a Bachelor's Degree in Chemical
         Engineering. I enjoy front end developement.
@@ -183,6 +235,11 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+    "
     ></script>
     <script src="script.js"></script>
   </body>

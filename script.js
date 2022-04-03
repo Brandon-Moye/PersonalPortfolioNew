@@ -32,17 +32,44 @@
 //   }
 // });
 
-document
-  .querySelector(".imageContainer")
-  .addEventListener("mouseover", function () {
-    document.getElementById("githubLogo").classList.add("githubLogo2");
-  });
+// --------------------------
+// SMOOTH SCROLLINGH
+// --------------------------
+const allLinks = document.querySelectorAll("a:link");
 
-document
-  .querySelector(".project1Description")
-  .addEventListener("mouseover", function () {
-    document.getElementById("githubLogo").classList.remove("githubLogo2");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    //Scroll back to top
+    if (href === "#aboutSection")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    if (href !== "#aboutSection" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
   });
+});
+
+// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+
+// ------------------------------------------------------
+
+// document
+//   .querySelector(".imageContainer")
+//   .addEventListener("mouseover", function () {
+//     document.getElementById("githubLogo").classList.add("githubLogo2");
+//   });
+
+// document
+//   .querySelector(".projectDescription")
+//   .addEventListener("mouseover", function () {
+//     document.getElementById("githubLogo").classList.remove("githubLogo2");
+//   });
 
 //adding the sticky class when it scrolls into the right view
 
