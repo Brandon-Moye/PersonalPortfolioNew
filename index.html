@@ -14,47 +14,40 @@
     />
   </head>
   <body>
-    <header id="header" class="header headerOrangeBuffer">
-      <nav class="allNavContainer">
-        <div
-          id="landingScreenButtonContainer"
-          class="landingScreenButtonContainer"
-        >
-          <a class="navButton landingScreenButton" href="#aboutSection"
-            >Brandon Moye</a
+    <div class="navbarAndAboutSectionContainer">
+      <header id="header" class="header headerOrangeBuffer">
+        <nav class="allNavContainer">
+          <div
+            id="landingScreenButtonContainer"
+            class="landingScreenButtonContainer"
           >
+            <a class="navButton landingScreenButton" href="#aboutSection"
+              >Brandon Moye</a
+            >
+          </div>
+          <div class="otherButtonContainer">
+            <a class="navButton projectsButton" href="#projectsSection"
+              >Projects</a
+            >
+            <a class="navButton resumeButton" href="#resumeSection">Resume</a>
+            <a class="navButton contactButton" href="#contactSection"
+              >Contact</a
+            >
+          </div>
+        </nav>
+      </header>
+      <section id="aboutSection" class="aboutSection heroContainer">
+        <div class="aboutSectionTextContainer">
+          <p class="hello">Hello,</p>
+          <p class="introduction">
+            my name is Brandon Moye and I am a self taught developer. I am
+            learning HTML, CSS, and JavaScript via Udemy certifications and
+            personal projects. I am currently a process engineering and am
+            passionate about integrating tech...
+          </p>
         </div>
-        <div class="otherButtonContainer">
-          <a class="navButton projectsButton" href="#projectsSection"
-            >Projects</a
-          >
-          <a class="navButton resumeButton" href="#resumeSection">Resume</a>
-          <a class="navButton contactButton" href="#contactSection">Contact</a>
-        </div>
-      </nav>
-    </header>
-    <div id="aboutSection" class="heroContainer">
-      <section id="LHS" class="LHS">
-        <p class="hello">Hello,</p>
-        <p class="intro">my name is</p>
-        <p class="name">
-          Brandon<br />
-          Moye
-        </p>
       </section>
-      <nav id="background-change" class="RHS">
-        <!-- <a class="link about" href="#">About</a>
-
-        <a
-          id="background-trigger"
-          class="link projects"
-          href="/ProjectsPage/projectsIndex.html"
-          >Projects</a
-        >
-        <a class="link resume" href="#">Resume</a> -->
-      </nav>
     </div>
-
     <!--                -->
     <!--PROJECTS SECTION-->
     <!--                -->
@@ -122,7 +115,9 @@
               <a class="projectLink projectLinkToGithub" href="#"
                 >See in Github &rarr;</a
               >
-              <a class="projectLink projectLinkToLive" href="#"
+              <a
+                class="projectLink projectLinkToLive"
+                href="/ticTacToe/index.html"
                 >See Live &rarr;</a
               >
             </div>

@@ -83,17 +83,23 @@ const obs = new IntersectionObserver(
 
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
+      document;
+      // .querySelector(".allNavContainer")
+      // .classList.remove("allNavContainerWithAbsolutePositioning");
     }
 
     if (ent.isIntersecting === true) {
       document.body.classList.remove("sticky");
+      document;
+      // .querySelector(".allNavContainer")
+      // .classList.add("allNavContainerWithAbsolutePositioning");
     }
   },
   {
     // inside the viewport
     root: null,
     threshold: 0,
-    rootMargin: "-100px", //fire when the heroContainer is not in the viewport
+    rootMargin: "-90px", //fire when the heroContainer is not in the viewport
   }
 );
 
