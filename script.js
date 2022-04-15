@@ -35,7 +35,10 @@
 // --------------------------
 // SMOOTH SCROLLINGH
 // --------------------------
-const allLinks = document.querySelectorAll("a:link");
+
+const allLinks = document.querySelectorAll("a.navButton");
+const workingLinks = document.getElementsByClassName("projectLink");
+// const allLinks = document.getElementsByClassName("navButton");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -54,7 +57,6 @@ allLinks.forEach(function (link) {
     }
   });
 });
-
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 // ------------------------------------------------------
