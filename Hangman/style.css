@@ -1,0 +1,318 @@
+/*need to start with the global reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*making the page scalable by setting font scales*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: black;
+  overflow-x: hidden;
+  background-color: grey;
+}
+
+.title {
+  display: flex;
+  font-weight: 600;
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.returnToSite:link,
+.returnToSite:visited {
+  display: block;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  background: #e35400;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  width: 100vw;
+  transition: all 0.2s;
+}
+
+.returnToSite:hover,
+.returnToSite:active {
+  background: black;
+  color: #e35400;
+}
+
+.gameContainer {
+  max-width: 120rem;
+  max-height: 100vh;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.hangmanContainer {
+  /* display: relative; */
+  width: 75rem;
+  margin: 0 auto;
+  height: 25rem;
+  border-radius: 5rem;
+  background: lightgrey;
+  margin-bottom: 2rem;
+}
+
+.form {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.submit {
+  font-size: 2.5rem;
+  width: 10rem;
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+  border-radius: 25px;
+  border: none;
+  background: #e67e22;
+  color: #733f11;
+  transition: all 0.3s;
+}
+
+.submit:hover {
+  background: #733f11;
+  color: #e67e22;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#letter {
+  font-size: 3rem;
+  width: 10rem;
+  border-radius: 2.5rem;
+  border: none;
+  text-align: center;
+  background: lightgrey;
+  /* padding: 1rem 1rem; */
+  outline: none;
+}
+
+.reloadAndHintContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#hint {
+  font-size: 2.5rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.reload {
+  /* margin: 0 auto; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-size: 2.5rem;
+  padding: 1rem 1rem;
+  /* margin-right: 1rem; */
+  border-radius: 2rem;
+  border: none;
+  background: #f1c40f;
+  color: #302703;
+  transition: all 0.3s;
+}
+
+.reload:hover {
+  background: #302703;
+  color: #f1c40f;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.incorrectLettersTitle {
+  font-size: 4rem;
+  font-weight: 450;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#wrongGuessContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 0.5rem solid #400e0f; */
+  /* width: 50px; */
+  /* height: 50px; */
+  color: #400e0f;
+  width: 75rem;
+  height: 7.5rem;
+  font-size: 5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 2.5rem;
+  background: #e68383;
+}
+
+#visibleCells {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+td {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 7.5rem;
+  height: 7.5rem;
+  font-size: 5rem;
+  /* border-radius: 20%; */
+  margin-bottom: 1rem;
+  background-color: lightgrey;
+  /* padding: 0.5rem 0.5rem; */
+}
+
+#finalMessage {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.reset {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1rem 1rem;
+  border-radius: 2.5rem;
+  border: none;
+  transition: all 0.3s;
+}
+
+.reset:hover {
+  background: black;
+  color: lightgrey;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+.gameWon {
+  background: #2ecc71;
+  transition: all 0.3s;
+}
+
+.gameLost {
+  background: #d63031;
+  transition: all 0.5s;
+}
+
+.platform {
+  border-top: 1px solid black;
+  position: relative;
+  top: 22.5rem;
+  left: 250px;
+  width: 200px;
+  /* height: 50px; */
+}
+
+.post {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  position: relative;
+  width: 10rem;
+  height: 20rem;
+  top: 2.5rem;
+  left: 27.5rem;
+}
+
+.rope {
+  border-left: 1px solid black;
+  position: relative;
+  height: 7rem;
+  top: -17.5rem;
+  left: 37.5rem;
+}
+
+.head {
+  border: 1px solid black;
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  top: -17.5rem;
+  left: 36rem;
+}
+
+.body {
+  position: relative;
+  border-left: 1px solid black;
+  height: 5rem;
+  top: -17.5rem;
+  left: 37.5rem;
+}
+
+.leftArm {
+  position: relative;
+  border-left: 1px solid black;
+  height: 2.5rem;
+  transform: rotate(20deg);
+  top: -8.5rem;
+  left: 34.8rem;
+}
+
+.rightArm {
+  position: relative;
+  border-left: 1px solid black;
+  height: 2.5rem;
+  transform: rotate(340deg);
+  top: -36.5rem;
+  left: 35.74rem;
+}
+
+.blank {
+  background-color: black;
+  width: 5rem;
+}
+
+.leftLeg {
+  position: relative;
+  border-left: 1px solid black;
+  height: 2.5rem;
+  transform: rotate(20deg);
+  top: -10rem;
+  left: 34.8rem;
+}
+
+.rightLeg {
+  position: relative;
+  border-left: 1px solid black;
+  height: 2.5rem;
+  transform: rotate(340deg);
+  top: -38.2rem;
+  left: 35.7rem;
+}

@@ -110,13 +110,10 @@ body {
 
 .contactButton:hover,
 .contactButton:active {
-  background-color: green;
-  background-color: #2d4739;
-  background-color: #2d6228;
+  background-color: #04724d;
   color: white;
   transform: translateY(-0.2rem);
-  box-shadow: 0rem 0rem 5rem #2d4739;
-  box-shadow: 0rem 0rem 5rem #2d6228;
+  box-shadow: 0rem 0rem 5rem #04724d;
 }
 
 .projectsButton:hover,
@@ -406,9 +403,122 @@ h3 {
   /* max-width: 100vw; */
   /* padding: 3.2rem; */
   margin: 0 auto;
-  grid-template-columns: 2fr 1fr;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   /* z-index: 3; */
-  background: green;
+  background: #04724d;
+  padding-top: 10rem;
+}
+
+.contactSectionTitle {
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .contactSectionContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+} */
+
+.contactInfoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.phoneContainer,
+.emailContainer,
+.linkedInContainer,
+.githubContainer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.contactIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #cde3db;
+}
+
+.contactLink:link,
+.contactLink:visited {
+  text-decoration: none;
+  color: #cde3db;
+  font-style: normal;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+.contactLink:hover,
+.link:active {
+  background: #cde3db;
+  color: #04724d;
+}
+
+.contactMeForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.nameContainer {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.emailContainer {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+}
+
+.messageAndSubmitButtonContainer {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactMeForm label {
+  color: #cde3db;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.nameInput,
+.emailInput,
+.messageBodyInput {
+  border-radius: 30px;
+  border: none;
+  height: 5rem;
+  width: 30rem;
+  font-size: 2rem;
+  padding-left: 2rem;
+  outline: none;
+  margin-bottom: 2.5rem;
+}
+
+.messageBodyInput {
+  height: 40rem;
+  width: 60rem;
+}
+
+.submit {
+  border-radius: 30px;
+  height: 5rem;
+  width: 15rem;
+  border: none;
 }
