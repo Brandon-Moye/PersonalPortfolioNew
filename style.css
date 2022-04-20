@@ -399,15 +399,11 @@ h3 {
 /* ---------------------------------------------- */
 
 .contactSection {
-  /* display: grid; */
-  /* max-width: 100vw; */
-  /* padding: 3.2rem; */
   margin: 0 auto;
   width: 100vw;
-  /* height: 100vh; */
+  height: 100vh;
   /* z-index: 3; */
   background: #04724d;
-  padding-top: 10rem;
 }
 
 .contactSectionTitle {
@@ -415,6 +411,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
+  padding-top: 10rem;
 }
 
 /* .contactSectionContainer {
@@ -424,43 +422,10 @@ h3 {
   justify-items: center;
 } */
 
-.contactInfoContainer {
+/* .contactInfoContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-}
-
-.phoneContainer,
-.emailContainer,
-.linkedInContainer,
-.githubContainer {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-bottom: 2.5rem;
-}
-
-.contactIcon {
-  width: 2.5rem;
-  height: 2.5rem;
-  color: #cde3db;
-}
-
-.contactLink:link,
-.contactLink:visited {
-  text-decoration: none;
-  color: #cde3db;
-  font-style: normal;
-  font-size: 2rem;
-  transition: all 0.3s ease;
-  border-radius: 30px;
-  padding: 1rem;
-}
-
-.contactLink:hover,
-.link:active {
-  background: #cde3db;
-  color: #04724d;
 }
 
 .contactMeForm {
@@ -474,6 +439,8 @@ h3 {
   grid-row: 1 / 2;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .emailContainer {
@@ -481,8 +448,8 @@ h3 {
   grid-row: 2 / 3;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: left;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .messageAndSubmitButtonContainer {
@@ -521,4 +488,139 @@ h3 {
   height: 5rem;
   width: 15rem;
   border: none;
+}
+
+.phoneContainer,
+.emailContainer,
+.linkedInContainer,
+.githubContainer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 2.5rem;
+} */
+
+/*-------------   STARTING OVER WITH CSS CODE FOR FORM SETUP ----------*/
+
+/*FORM FORMATTING*/
+
+.contactMeForm {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nameContainer {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.emailContainer {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageAndSubmitButtonContainer {
+  grid-column: 2 /3;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.nameLabel,
+.emailLabel,
+.messageLabel {
+  font-size: 2rem;
+  color: #cde3db;
+  margin-left: 1rem;
+}
+
+.nameInput,
+.emailInput,
+.messageBodyInput {
+  height: 5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.messageBodyInput {
+  height: 25rem;
+  display: flex;
+  resize: none;
+  font-family: "Merriweather", serif;
+}
+
+.submit {
+  height: 3rem;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  background: #cde3db;
+  color: #04724d;
+}
+
+.submit:hover {
+  background: #04724d;
+  color: #cde3db;
+  cursor: pointer;
+  box-shadow: 0px 10px 30px #023927;
+  transform: translateY(-0.2rem);
+}
+
+/*ACTUAL CONTACT INFO*/
+
+.contactIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #cde3db;
+}
+
+.contactLink:link,
+.contactLink:visited {
+  text-decoration: none;
+  color: #cde3db;
+  font-style: normal;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.contactLink:hover,
+.link:active {
+  background: #cde3db;
+  color: #04724d;
+  box-shadow: 0px 10px 30px #023927;
+}
+
+.contactInfoContainer {
+  margin-top: 10rem;
+  padding-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.phoneContainer,
+.emailInfoContainer,
+.linkedInContainer,
+.githubContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

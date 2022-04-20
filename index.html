@@ -270,18 +270,26 @@
     <section id="contactSection" class="contactSection">
       <h3 class="contactSectionTitle">Contact</h3>
       <div class="contactSectionContainer">
+        <div class="errorMessageContainer"></div>
         <form class="contactMeForm" action="">
           <div class="nameContainer">
-            <label for="name">Full Name</label>
+            <label class="nameLabel" for="name">Full Name</label>
             <input class="nameInput" type="text" />
           </div>
           <div class="emailContainer">
-            <label for="email">Email</label>
-            <input class="emailInput" type="text" />
+            <label class="emailLabel" for="email">Email</label>
+            <input class="emailInput" type="email" />
           </div>
           <div class="messageAndSubmitButtonContainer">
-            <label for="messageBody">Message</label>
-            <input class="messageBodyInput" type="text" />
+            <label class="messageLabel" for="messageBody">Message</label>
+            <!-- <input class="messageBodyInput" type="text" /> -->
+            <textarea
+              class="messageBodyInput"
+              name="messageBodyInput"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
             <button class="submit" type="submit">Submit</button>
           </div>
         </form>
@@ -295,7 +303,7 @@
               <a class="contactLink" href="tel:2565653398">(256) 565 3998</a>
             </address>
           </div>
-          <div class="emailContainer">
+          <div class="emailInfoContainer">
             <ion-icon class="contactIcon" name="mail-outline"></ion-icon>
             <address>
               <a class="contactLink" href="mailto:brandon.m.moye@gmail.com"
@@ -305,11 +313,17 @@
           </div>
           <div class="linkedInContainer">
             <ion-icon class="contactIcon" name="logo-linkedin"></ion-icon>
-            <a class="contactLink" href="">LinkedIn</a>
+            <a
+              class="contactLink"
+              href="https://www.linkedin.com/in/moye-brandon/"
+              >LinkedIn</a
+            >
           </div>
           <div class="githubContainer">
             <ion-icon class="contactIcon" name="logo-github"></ion-icon>
-            <a class="contactLink" href="">Github</a>
+            <a class="contactLink" href="https://github.com/Brandon-Moye"
+              >Github</a
+            >
           </div>
         </div>
       </div>

@@ -106,3 +106,22 @@ const obs = new IntersectionObserver(
 );
 
 obs.observe(sectionHeroEl);
+
+// FORM VALIDATION CODE
+const formInputName = document.querySelector(".nameInput");
+const formInputEmail = document.querySelector(".emailInput");
+const formInputMessageBody = document.querySelector(".messageBodyInput");
+const errorMessageDiv = document.querySelector(".errorMessageContainer");
+
+document
+  .querySelector(".contactMeForm")
+  .addEventListener("submit", function (e) {
+    let errorMessages = [];
+    if (formInputName.value === "" || formInputName.value === null) {
+      errorMessages.push("Please enter your name");
+    }
+    if (errorMessages.length > 0) {
+      e.preventDefault();
+      errorMessageDiv.innerText = errorMessages.join(", ");
+    }
+  });
