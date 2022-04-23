@@ -1,0 +1,74 @@
+/* rem and em do NOT depend on html font-size in
+media queries
+1rem = 1em = 16px
+*/
+
+/* BELOW 1300PX (SMALLER COMPUTERS) */
+@media (max-width: 81.25em) {
+  .resumeSVG {
+    width: 110rem;
+  }
+}
+
+/* BELOW 1250PX (TABLETS) */
+@media (max-width: 78.125em) {
+  .introduction {
+    font-size: 4.5rem;
+    width: 100rem;
+  }
+
+  .projectContainer {
+    width: 100rem;
+    /* I will probably need to be more detailed in
+    the exact ratio to have all the images because
+    I also need to adjust the container height
+    */
+  }
+
+  .projectBodyText {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 72.5em) {
+  .resumeSVG {
+    width: 100rem;
+  }
+}
+
+@media (max-width: 65.625em) {
+  .introduction {
+    font-size: 4rem;
+    width: 85rem;
+  }
+
+  .projectContainer {
+    width: 85rem;
+  }
+
+  .projectImage {
+    width: 20rem;
+  }
+
+  .resumeSVG {
+    width: 90rem;
+  }
+
+  .navButton {
+    font-size: 2rem;
+    width: 10rem;
+    height: 3.33rem;
+  }
+
+  .landingScreenButton {
+    width: 20rem;
+  }
+
+  .sticky .header {
+    height: 7.3rem;
+  }
+
+  .sticky .heroContainer {
+    margin-top: 7.3rem;
+  }
+}

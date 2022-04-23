@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>Brandon Moye</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -258,7 +259,13 @@
     <section id="resumeSection" class="resumeSection">
       <h3 class="resumeSectionTitle">Resume</h3>
       <div class="resumeLinkContainer">
-        <a class="resumeLinkPDF" href="/resume.pdf">PDF</a>
+        <a
+          class="resumeLinkPDF"
+          href="/moyeResume.pdf"
+          download="moyeResume.pdf"
+          >download pdf</a
+        >
+        <ion-icon class="downloadPDFIcon" name="download-outline"></ion-icon>
       </div>
       <img class="resumeSVG" src="img/resume.svg" alt="#" />
     </section>
@@ -270,15 +277,14 @@
     <section id="contactSection" class="contactSection">
       <h3 class="contactSectionTitle">Contact</h3>
       <div class="contactSectionContainer">
-        <div class="errorMessageContainer"></div>
         <form class="contactMeForm" action="">
           <div class="nameContainer">
             <label class="nameLabel" for="name">Full Name</label>
-            <input class="nameInput" type="text" />
+            <input class="nameInput" type="text" required />
           </div>
           <div class="emailContainer">
             <label class="emailLabel" for="email">Email</label>
-            <input class="emailInput" type="email" />
+            <input class="emailInput" type="email" required />
           </div>
           <div class="messageAndSubmitButtonContainer">
             <label class="messageLabel" for="messageBody">Message</label>
