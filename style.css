@@ -19,6 +19,7 @@ html {
 
 body {
   font-family: "Merriweather", serif;
+  font-family: 'Roboto', sans-serif;
   width: 100vw;
   margin: 0 auto;
 
@@ -149,12 +150,14 @@ body {
   background: #e35400;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .aboutSectionTextContainer {
-  padding-top: 2.5rem;
-  margin-left: 2.5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1rem;
 }
 
 .hello {
@@ -166,19 +169,46 @@ body {
   height: fit-content;
   border-radius: 30px;
   padding: 1rem 2rem;
+  margin-top: 5rem;
 }
 
 .introduction {
-  margin-top: 1rem;
   background: rgba(255, 255, 255, 0.123);
   box-shadow: 0rem 10rem 20rem rgba(0, 0, 0, 0.212);
 
-  font-size: 5rem;
+  font-size: 5.5rem;
   padding: 2rem;
   width: 120rem;
   height: fit-content;
   border-radius: 30px;
 }
+
+.codingLanguageText {
+  background-color: black;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  border-radius: 10px;
+}
+
+.ReactCodingLanguageText {
+  color: #61DBFB;
+}
+
+.FirebaseCodingLanguageText {
+  color: #FFA611;
+}
+
+.JavaScriptCodingLanguageText {
+  color: #f0db4f
+}
+
+.HTMLCodingLanguageText {
+  color: #E44D26;
+}
+
+.CSSCodingLanguageText {
+  color: #264de4;
+}
+
 
 /* ---------------------------------------------- */
 /* PROJECTS SECTION */
@@ -226,19 +256,13 @@ body {
 /* ---------------------------------------------- */
 
 .linkContainer {
-  /* position: absolute; */
-  bottom: 1rem;
-  left: 1rem;
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
+  justify-content: flex-start;
   color: #bdcfe8;
   margin-top: 1.5rem;
-}
-
-.projectLinkToGithub {
-  margin-right: 10rem;
-  margin-left: 3rem;
+  gap: 5rem;
 }
 
 /* .projectLink:after {
