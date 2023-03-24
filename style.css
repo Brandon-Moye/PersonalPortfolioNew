@@ -191,22 +191,75 @@ gap: 1rem;
 
 .ReactCodingLanguageText {
   color: #61DBFB;
+  animation: ReactTextAnimation 1.5s ease-in forwards infinite alternate 1s;
+  /* animation-fill-mode: both; */
 }
 
 .FirebaseCodingLanguageText {
   color: #FFA611;
+  animation: FirebaseTextAnimation 1.5s ease-in forwards infinite alternate 0s;
+
 }
 
 .JavaScriptCodingLanguageText {
-  color: #f0db4f
+  color: #f0db4f;
+  animation: JavaScriptTextAnimation 1.5s ease-in forwards infinite alternate 4s;
+
 }
 
 .HTMLCodingLanguageText {
   color: #E44D26;
+  animation: HTMLTextAnimation 1.5s ease-in forwards infinite alternate 5s;
+
 }
 
 .CSSCodingLanguageText {
   color: #264de4;
+  animation: CSSTextAnimation 1.5s ease-in forwards infinite alternate 2s;
+
+}
+
+
+
+@keyframes ReactTextAnimation {
+  0% {
+    color: #61DBFB;
+  }
+  100% {
+    color: #04b6e8;
+  }
+}
+@keyframes FirebaseTextAnimation {
+  0% {
+    color: #FFA611;
+  }
+  100% {
+    color: #ffd489;
+  }
+}
+@keyframes JavaScriptTextAnimation {
+  0% {
+    color: #f0db4f;
+  }
+  100% {
+    color: #ffdd00;
+  }
+}
+@keyframes HTMLTextAnimation {
+  0% {
+    color: #E44D26;
+  }
+  100% {
+    color: #de7a61;
+  }
+}
+@keyframes CSSTextAnimation {
+  0% {
+    color: #264de4;
+  }
+  100% {
+    color: #5d76d9;
+  }
 }
 
 
@@ -449,7 +502,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   padding-top: 10rem;
 }
 
@@ -648,7 +701,8 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10rem;
+  justify-content: center;
+  gap: 15rem;
   margin-left: 2.5rem;
 }
 
