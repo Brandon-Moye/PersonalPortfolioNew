@@ -118,7 +118,15 @@ media queries
 }
 
 /*at 745 pixels*/
-@media (max-width: 46.875em) {
+@media (max-width: 750px) {
+  .contactLink:link,
+  .contactLink:visited,
+  .contactLink:hover,
+  .contactLink:active {
+    font-size: 3rem;
+  }
+
+
   .introduction {
     font-size: 3rem;
     width: 60rem;
@@ -137,6 +145,8 @@ media queries
   .otherButtonContainer {
     gap: 5rem;
   }
+
+
 }
 
 /* at 650 pixels*/
@@ -200,7 +210,7 @@ media queries
     width: 30rem;
   }
   .resumeSVG {
-    width: 5rem;
+    width: 40rem;
   }
 
   .contactMeForm * {
@@ -208,6 +218,12 @@ media queries
   }
 
   .contactLink:link {
-    font-size: 0.5rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .contactLink:link {
+    font-size: 1.5rem;
   }
 }
