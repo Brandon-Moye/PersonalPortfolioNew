@@ -13,7 +13,7 @@ media queries
 /* BELOW 1250PX (TABLETS) */
 @media (max-width: 78.125em) {
   .introduction {
-    font-size: 4.5rem;
+    font-size: 5rem;
     width: 100rem;
   }
 
@@ -35,7 +35,7 @@ media queries
 /*at 1050 pixels*/
 @media (max-width: 65.625em) {
   .introduction {
-    font-size: 4rem;
+    font-size: 4.5rem;
     width: 85rem;
   }
 
@@ -79,7 +79,7 @@ media queries
 /*at 950 pixels*/
 @media (max-width: 59.375em) {
   .introduction {
-    font-size: 3.5rem;
+    font-size: 4rem;
     width: 65rem;
   }
 
@@ -105,9 +105,11 @@ media queries
     display: flex;
     flex-direction: column;
     width: 25.6rem;
-    height: 65rem;
+    height: 58rem;
   }
-
+.projectLink {
+  font-size: 1rem;
+}
   .projectLinkToGithub {
     margin-left: 0rem;
   }
@@ -186,7 +188,9 @@ media queries
 
 /*at 575 pixels*/
 @media (max-width: 35.9375em) {
-
+.allNavContainer {
+  height: 7.25rem;
+}
   .otherButtonContainer {
     justify-content: center;
     gap: 1rem;
@@ -223,7 +227,26 @@ media queries
 }
 
 @media (max-width: 475px) {
+  .projectsSectionTitle, .resumeSectionTitle, .contactSectionTitle {
+    font-size: 8rem;
+  }
   .contactLink:link {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .resumeSVG {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .projectsSectionTitle, .resumeSectionTitle, .contactSectionTitle {
+    font-size: 7rem;
+  }
+
+  .resumeSVG {
+    width: 30rem;
   }
 }
