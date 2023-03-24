@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style2.css" /> -->
     <link rel="stylesheet" href="queries.css" />
+    <!-- <link rel="stylesheet" href="queries2.css" /> -->
     <title>Brandon Moye</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,18 +44,6 @@
               >Contact</a
             >
           </div>
-          <button class="hamburgerForMobileNavButton">
-            <ion-icon
-              class="hamburgerForMobileNavIcon"
-              name="menu-outline"
-            ></ion-icon>
-          </button>
-          <button class="closeForMobileNavButton">
-            <ion-icon
-              class="closeForMobileNavIcon"
-              name="close-outline"
-            ></ion-icon>
-          </button>
         </nav>
       </header>
       <section id="aboutSection" class="aboutSection heroContainer">
@@ -327,7 +317,7 @@
     <section id="contactSection" class="contactSection">
       <h3 class="contactSectionTitle">Contact</h3>
       <div class="contactSectionContainer">
-        <form class="contactMeForm" action="">
+        <!-- <form class="contactMeForm" action="">
           <div class="nameContainer">
             <label class="nameLabel" for="name">Full Name</label>
             <input class="nameInput" type="text" required />
@@ -338,7 +328,6 @@
           </div>
           <div class="messageAndSubmitButtonContainer">
             <label class="messageLabel" for="messageBody">Message</label>
-            <!-- <input class="messageBodyInput" type="text" /> -->
             <textarea
               class="messageBodyInput"
               name="messageBodyInput"
@@ -348,7 +337,7 @@
             ></textarea>
             <button class="submit" type="submit">Submit</button>
           </div>
-        </form>
+        </form> -->
         <div class="contactInfoContainer">
           <div class="phoneContainer">
             <ion-icon
@@ -356,13 +345,17 @@
               name="phone-portrait-outline"
             ></ion-icon>
             <address>
-              <a class="contactLink" href="tel:2565653398">(256) 565 3998</a>
+              <a class="contactLink linkText" href="tel:2565653398"
+                >(256) 565 3998</a
+              >
             </address>
           </div>
           <div class="emailInfoContainer">
             <ion-icon class="contactIcon" name="mail-outline"></ion-icon>
             <address>
-              <a class="contactLink" href="mailto:brandon.m.moye@gmail.com"
+              <a
+                class="contactLink linkText"
+                href="mailto:brandon.m.moye@gmail.com"
                 >brandon.m.moye@gmail.com</a
               >
             </address>
@@ -370,14 +363,18 @@
           <div class="linkedInContainer">
             <ion-icon class="contactIcon" name="logo-linkedin"></ion-icon>
             <a
-              class="contactLink"
+              class="contactLink linkText"
               href="https://www.linkedin.com/in/moye-brandon/"
+              target="_blank"
               >LinkedIn</a
             >
           </div>
           <div class="githubContainer">
             <ion-icon class="contactIcon" name="logo-github"></ion-icon>
-            <a class="contactLink" href="https://github.com/Brandon-Moye"
+            <a
+              class="contactLink linkText"
+              href="https://github.com/Brandon-Moye"
+              target="_blank"
               >Github</a
             >
           </div>

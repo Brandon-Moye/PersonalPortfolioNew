@@ -10,13 +10,18 @@
 
 html {
   font-size: 62.5%;
+  /* width: 100vw; */
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
 
-  /* Does not work on Safari and Edge */
-  /* scroll-behavior: smooth; */
 }
 
 body {
   font-family: "Merriweather", serif;
+  width: 100vw;
+  margin: 0 auto;
+
 }
 
 /* ---------------------------------------------- */
@@ -52,10 +57,10 @@ body {
 .allNavContainer {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  /* align-items: center; */
+  /* width: 100vw; */
   /* background: rgba(255, 255, 255, 0.171); */
   box-shadow: 0 0rem 20rem rgba(0, 0, 0, 0.336);
-  /* height: 10vh; */
 }
 
 .allNavContainerWithAbsolutePositioning {
@@ -81,7 +86,7 @@ body {
   justify-content: center;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.4);
-  font-size: 3rem;
+  font-size: clamp(1rem, 2rem, 3rem);
   font-weight: 700;
   color: black;
   margin-top: 2rem;
@@ -134,34 +139,17 @@ body {
   box-shadow: 0rem 0rem 5rem #26173d;
 }
 
-/*  MOBILE NAVIGATION MENUE */
-
-.hamburgerForMobileNavButton,
-.closeForMobileNavButton {
-  border: none;
-  background: none;
-  cursor: pointer;
-  display: none;
-}
-
-.hamburgerForMobileNavIcon,
-.closeForMobileNavIcon {
-  width: 4rem;
-  height: 4rem;
-}
-
 /* ---------------------------------------------- */
 /* LANDING PAGE */
 /* ---------------------------------------------- */
 
-/* .navbarAndAboutSectionContainer {
-  height: 100vh;
-} */
-
 .heroContainer {
-  width: 100vw;
+  /* width: 300rem; */
   height: 100vh;
   background: #e35400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutSectionTextContainer {
@@ -608,8 +596,8 @@ h3 {
 /*ACTUAL CONTACT INFO*/
 
 .contactIcon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 4rem;
+  height: 4rem;
   color: #cde3db;
 }
 
@@ -618,7 +606,7 @@ h3 {
   text-decoration: none;
   color: #cde3db;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 4rem;
   transition: all 0.3s ease;
   border-radius: 5px;
   padding: 0.5rem;
@@ -633,12 +621,11 @@ h3 {
 }
 
 .contactInfoContainer {
-  margin-top: 10rem;
-  padding-bottom: 2.5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10rem;
+  margin-left: 2.5rem;
 }
 
 .phoneContainer,
@@ -650,3 +637,4 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+
