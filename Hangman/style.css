@@ -52,12 +52,13 @@ body {
 .gameContainer {
   max-width: 120rem;
   max-height: 100vh;
-  padding: 0 3.2rem;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hangmanContainer {
-  /* display: relative; */
   width: 75rem;
   margin: 0 auto;
   height: 25rem;
@@ -111,18 +112,12 @@ body {
 
 #hint {
   font-size: 2.5rem;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
 
 .reload {
-  /* margin: 0 auto; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   font-size: 2.5rem;
   padding: 1rem 1rem;
   /* margin-right: 1rem; */
@@ -150,7 +145,7 @@ body {
 }
 
 #wrongGuessContainer {
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,7 +291,7 @@ td {
 
 .blank {
   background-color: black;
-  width: 5rem;
+  width: 7.5rem;
 }
 
 .leftLeg {
@@ -315,4 +310,193 @@ td {
   transform: rotate(340deg);
   top: -38.2rem;
   left: 35.7rem;
+}
+
+@media (max-width: 1200px) {
+  td {
+    font-size: 3rem;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .blank {
+    width: 5rem;
+  }
+
+
+
+
+}
+
+@media (max-width: 980px) {
+  td {
+    font-size: 2.5rem;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .blank {
+    width: 4rem;
+  }
+}
+
+@media (max-width: 805px) {
+.hangmanContainer {
+  width: 60rem;
+}
+td {
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.blank {
+  width: 3rem;
+}
+
+#wrongGuessContainer {
+  font-size: 2.25rem;
+  width: 50rem;
+  height: 5rem;
+}
+.platform {
+  border-top: 1px solid black;
+  position: relative;
+  top: 22.5rem;
+  left: 17.5rem;
+  width: 200px;
+  /* height: 50px; */
+}
+
+.post {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  position: relative;
+  width: 10rem;
+  height: 20rem;
+  top: 2.5rem;
+  left: 20.5rem;
+}
+
+.rope {
+  border-left: 1px solid black;
+  position: relative;
+  height: 7rem;
+  top: -17.5rem;
+  left: 30.5rem;
+}
+
+.head {
+  border: 1px solid black;
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  top: -17.5rem;
+  left: 29rem;
+}
+
+.body {
+  position: relative;
+  border-left: 1px solid black;
+  height: 5rem;
+  top: -17.5rem;
+  left: 30.5rem;
+}
+
+.leftArm {
+  position: relative;
+  border-left: 1px solid black;
+  height: 2.5rem;
+  transform: rotate(20deg);
+  top: -10.5rem;
+  left: 28.2rem;
+}
+
+.rightArm {
+  position: relative;
+  border-left: 1px solid black;
+  height: 2.5rem;
+  transform: rotate(340deg);
+  top: -33.5rem;
+  left: 29.2rem;
+}
+
+.leftLeg {
+  position: relative;
+  border-left: 1px solid black;
+  height: 2.5rem;
+  transform: rotate(20deg);
+  top: -12.5rem;
+  left: 28.3rem;
+}
+
+.rightLeg {
+  position: relative;
+  border-left: 1px solid black;
+  height: 2.5rem;
+  transform: rotate(340deg);
+  top: -38.2rem;
+  left: 35.7rem;
+}
+
+}
+
+@media (max-width: 685px) {
+  .hangmanContainer {
+    width: 30rem;
+  }
+
+  td, .blank {
+    font-size: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .reload {
+    font-size: 2rem;
+    height: 4rem;
+  }
+
+  #hint {
+    font-size: 2rem;
+  }
+
+  #letter, #submit {
+    font-size: 2rem;
+    height: 4rem;
+    width: 6rem;
+  }
+
+  #submit {
+    width: 8rem;
+  }
+
+  .incorrectLettersTitle {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 515px) {
+  #wrongGuessContainer {
+    width: 40rem;
+    font-size: 2rem;
+  }
+
+  #finalMessage {
+    font-size: 2rem;
+    width: 30rem;
+    text-align: center;
+  } 
+
+  #reset {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 410px) {
+  #wrongGuessContainer {
+    width: 30rem;
+    height: 4rem;
+  }
 }
