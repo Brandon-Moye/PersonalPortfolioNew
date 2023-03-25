@@ -215,7 +215,7 @@ gap: 1rem;
 
 .CSSCodingLanguageText {
   color: #264de4;
-  animation: CSSTextAnimation 1.5s ease-in forwards infinite alternate 2s;
+  animation: CSSTextAnimation 2s ease-in forwards infinite alternate 2s;
 
 }
 
@@ -234,7 +234,7 @@ gap: 1rem;
     color: #FFA611;
   }
   100% {
-    color: #ffd489;
+    color: #ffe3b1;
   }
 }
 @keyframes JavaScriptTextAnimation {
@@ -242,7 +242,7 @@ gap: 1rem;
     color: #f0db4f;
   }
   100% {
-    color: #ffdd00;
+    color: #fbf3be;
   }
 }
 @keyframes HTMLTextAnimation {
