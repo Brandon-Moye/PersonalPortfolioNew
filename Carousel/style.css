@@ -116,3 +116,24 @@ img:hover {
 /* ---------------------------------------------------------------------------------------------- */
 
 /* using a permanent hover class with Javascript? */
+
+@media (max-width: 600px) {
+  .mainImage {
+    width: 30rem;
+  }
+
+  .img {
+    width: 10;
+  }
+}
+
+@media (max-width: 425px) {
+  .mainImage {
+    width: 25rem;
+  }
+
+  .img {
+    width: 7rem;
+    height: 7rem;
+  }
+}
