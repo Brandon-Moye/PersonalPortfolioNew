@@ -436,8 +436,8 @@ td {
   border-left: 1px solid black;
   height: 2.5rem;
   transform: rotate(340deg);
-  top: -38.2rem;
-  left: 35.7rem;
+  top: -35.4rem;
+  left: 29.15rem;
 }
 
 }
@@ -491,6 +491,87 @@ td {
 
   #reset {
     font-size: 2rem;
+  }
+
+  .platform {
+    border-top: 1px solid black;
+    position: relative;
+    top: 22.5rem;
+    left: 5.25rem;
+    width: 200px;
+    /* height: 50px; */
+  }
+  
+  .post {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    position: relative;
+    width: 10rem;
+    height: 20rem;
+    top: 2.5rem;
+    left: 8rem;
+  }
+  
+  .rope {
+    border-left: 1px solid black;
+    position: relative;
+    height: 7rem;
+    top: -17.5rem;
+    left: 18rem;
+  }
+  
+  .head {
+    border: 1px solid black;
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    top: -17.5rem;
+    left: 16.55rem;
+  }
+  
+  .body {
+    position: relative;
+    border-left: 1px solid black;
+    height: 5rem;
+    top: -17.5rem;
+    left: 18.1rem;
+  }
+  
+  .leftArm {
+    position: relative;
+    border-left: 1px solid black;
+    height: 2.5rem;
+    transform: rotate(20deg);
+    top: -16.6rem;
+    left: 16.7rem;
+  }
+  
+  .rightArm {
+    position: relative;
+    border-left: 1px solid black;
+    height: 2.5rem;
+    transform: rotate(340deg);
+    top: -29.3rem;
+    left: 17.7rem;
+  }
+  
+  .leftLeg {
+    position: relative;
+    border-left: 1px solid black;
+    height: 2.5rem;
+    transform: rotate(20deg);
+    top: -17.8rem;
+    left: 16.8rem;
+  }
+  
+  .rightLeg {
+    position: relative;
+    border-left: 1px solid black;
+    height: 2.5rem;
+    transform: rotate(340deg);
+    top: -30.4rem;
+    left: 17.6rem;
   }
 }
 
