@@ -105,3 +105,13 @@ body {
   background: black;
   color: #e35400;
 }
+
+@media (max-width: 460px) {
+  .container, .addMessage, .reset {
+    max-width: 35rem;
+  }
+
+  .box {
+    height: 11.667rem;
+  }
+}
