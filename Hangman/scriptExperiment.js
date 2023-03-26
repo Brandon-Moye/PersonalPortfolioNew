@@ -3,7 +3,7 @@
 let wordBank = {
   0: ["succession", "game of thrones", "rupauls drag race", "family guy"],
   1: ["wyoming", "yellowstone", "the smoky mountains", "new york city"],
-  2: ["sushi", "coffee", "stouts", "hummus"],
+  2: ["sushi", "coffee", "macaroons", "hummus"],
   3: ["camping", "video games", "coding", "cooking"],
 };
 
