@@ -77,16 +77,16 @@ body {
 }
 
 .permaHoverImage1 {
-  background-image: url(img/_15A2000.jpg);
+  background-image: url(img/IMG_1.jpg);
   object-fit: fill;
   background-size: 40rem;
 }
 .permaHoverImage2 {
-  background-image: url(img/IMG_7301.JPG);
+  background-image: url(img/IMG_2.JPG);
   background-size: 30rem;
 }
 .permaHoverImage3 {
-  background-image: url(img/IMG_1722.JPG);
+  background-image: url(img/IMG_3.JPG);
   background-size: 30rem;
 }
 /* ---------------------------------------------------------------------------------------------- */
