@@ -145,8 +145,8 @@ body {
 /* ---------------------------------------------- */
 
 .heroContainer {
-  /* width: 300rem; */
-  height: 100vh;
+  width: 100vw;
+  /* height: 110vh; */
   background: #e35400;
   display: flex;
   justify-content: center;
@@ -162,14 +162,14 @@ gap: 1rem;
 
 .hello {
   text-align: center;
-  font-size: 10rem;
+  font-size: 8rem;
   background: rgba(0, 0, 0, 0.788);
   color: #e35400;
   width: fit-content;
   height: fit-content;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 1rem 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .introduction {
@@ -181,6 +181,7 @@ gap: 1rem;
   width: 120rem;
   height: fit-content;
   border-radius: 30px;
+  margin-bottom: 15rem;
 }
 
 .codingLanguageText {
@@ -427,7 +428,6 @@ h3 {
 .resumeSection {
   margin: 0 auto;
   width: 100vw;
-  /* height: 100vh; */
   background: #26173d;
   display: grid;
   padding-top: 10rem;
