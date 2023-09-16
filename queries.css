@@ -168,7 +168,7 @@ media queries
 @media (max-width: 40.625em) {
   .introduction {
     width: 40rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
 
@@ -231,7 +231,7 @@ media queries
     font-size: 4rem;
   }
   .introduction {
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 40rem;
   }
 
