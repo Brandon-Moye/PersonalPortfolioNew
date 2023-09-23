@@ -1,33 +1,33 @@
 "use strict";
-let movingLeft = 0;
-let movingRight = 0;
-let positionTrackerLeft = 0;
-let positionTrackerRight = 0;
+// let movingLeft = 0;
+// let movingRight = 0;
+// let positionTrackerLeft = 0;
+// let positionTrackerRight = 0;
 
-function sliderTesterLeft() {
-  // activatingTheCarousel(positionTrackerLeft,positionTrackerRight,movingLeft,10,-10);
+// function sliderTesterLeft() {
+//   // activatingTheCarousel(positionTrackerLeft,positionTrackerRight,movingLeft,10,-10);
 
-  console.log("left has been clicked");
-  positionTrackerLeft++;
-  movingLeft = positionTrackerLeft * 20 + positionTrackerRight * -20 + "rem";
-  movingLeft = "translateX(" + movingLeft + ")";
-  document.getElementById("imgContainer").style.transform = movingLeft;
-  // let moveElementByIdLeft = document.getElementById("imgContainer").style.left;
-  console.log(positionTrackerLeft);
-}
+//   console.log("left has been clicked");
+//   positionTrackerLeft++;
+//   movingLeft = positionTrackerLeft * 20 + positionTrackerRight * -20 + "rem";
+//   movingLeft = "translateX(" + movingLeft + ")";
+//   document.getElementById("imgContainer").style.transform = movingLeft;
+//   // let moveElementByIdLeft = document.getElementById("imgContainer").style.left;
+//   console.log(positionTrackerLeft);
+// }
 
-function sliderTesterRight() {
-  // activatingTheCarousel(positionTrackerRight,positionTrackerLeft,movingRight,-10,10);
+// function sliderTesterRight() {
+//   // activatingTheCarousel(positionTrackerRight,positionTrackerLeft,movingRight,-10,10);
 
-  console.log("left has been clicked");
-  positionTrackerRight++;
-  console.log(positionTrackerRight * -20);
-  movingRight = positionTrackerRight * -20 + positionTrackerLeft * 20 + "rem";
-  movingRight = "translateX(" + movingRight + ")";
-  document.getElementById("imgContainer").style.transform = movingRight;
-  // let moveElementByIdRight = document.getElementById("imgContainer").style.left;
-  console.log(positionTrackerRight);
-}
+//   console.log("left has been clicked");
+//   positionTrackerRight++;
+//   console.log(positionTrackerRight * -20);
+//   movingRight = positionTrackerRight * -20 + positionTrackerLeft * 20 + "rem";
+//   movingRight = "translateX(" + movingRight + ")";
+//   document.getElementById("imgContainer").style.transform = movingRight;
+//   // let moveElementByIdRight = document.getElementById("imgContainer").style.left;
+//   console.log(positionTrackerRight);
+// }
 
 function shellForAddEventListener(
   whichImageToHoverOver,
